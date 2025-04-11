@@ -1,0 +1,15 @@
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/bin/Debug/net9.0/MathGame
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/bin/Debug/net9.0/MathGame.deps.json
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/bin/Debug/net9.0/MathGame.runtimeconfig.json
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/bin/Debug/net9.0/MathGame.dll
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/bin/Debug/net9.0/MathGame.pdb
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/MathGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/MathGame.AssemblyInfoInputs.cache
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/MathGame.AssemblyInfo.cs
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/MathGame.csproj.CoreCompileInputs.cache
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/MathGame.sourcelink.json
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/MathGame.dll
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/refint/MathGame.dll
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/MathGame.pdb
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/MathGame.genruntimeconfig.cache
+/Users/barrmohammed/Desktop/DotnetAcademy/MathGame/MathGame/obj/Debug/net9.0/ref/MathGame.dll
