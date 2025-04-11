@@ -47,15 +47,18 @@ namespace MathGame
             {
                 int randNum1 = rnd.Next(1, 100);
                 int randNum2 = rnd.Next(1, 100);
+
+                //display current number and operation
+                // get user input
                 // continue game until they get it wrong then create new game item object with
                 // the current score, time, and operation and then add it to history controller
 
             }
         }
 
-        public void ViewGameHistory(GameItem gameItem)
+        public void ViewGameHistory()
         {
-
+            _historyController.ViewHistory();
         }
     }
 }

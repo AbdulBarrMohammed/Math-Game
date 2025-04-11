@@ -7,6 +7,8 @@ namespace MathGame
 {
     public class GameItem
     {
-        public string Name { get; set; }
+        public string OperationName { get; set; }
+        public DateTime Date { get; set; }
+        public int Score { get; set; }
     }
 }
