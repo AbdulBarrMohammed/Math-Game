@@ -7,14 +7,14 @@ namespace MathGame
 {
     public class HistoryController
     {
-        public void AddHistory(DateTime date, string operation, int score)
+        public void AddHistory(GameItem gameItem)
         {
 
         }
 
         public void ViewHistory()
         {
-
+            // loop trough mockdatabase 
         }
     }
 }
