@@ -7,24 +7,42 @@ namespace MathGame.obj
 {
     public static class Operate
     {
-        public static int Addition(int num1, int num2)
+        public static bool Addition(int num1, int num2)
         {
-            return num1 + num2;
+            System.Console.WriteLine($"{num1} + {num2}");
+            int correctTotal = num1 + num2;
+            string userAnswer = Console.ReadLine();
+            if (int.Parse(userAnswer) == correctTotal) return true;
+            return false;
+
+
         }
 
-        public static int Subtraction(int num1, int num2)
+        public static bool Subtraction(int num1, int num2)
         {
-            return num1 + num2;
+            System.Console.WriteLine($"{num1} - {num2}");
+            int correctTotal = num1 - num2;
+            string userAnswer = Console.ReadLine();
+            if (int.Parse(userAnswer) == correctTotal) return true;
+            return false;
         }
 
-        public static int Multiplication(int num1, int num2)
+        public static bool Multiplication(int num1, int num2)
         {
-            return num1 * num2;
+            System.Console.WriteLine($"{num1} * {num2}");
+            int correctTotal = num1 * num2;
+            string userAnswer = Console.ReadLine();
+            if (int.Parse(userAnswer) == correctTotal) return true;
+            return false;
         }
 
-        public static int Division(int num1, int num2)
+        public static bool Division(int num1, int num2)
         {
-            return num1 / num2;
+            System.Console.WriteLine($"{num1} / {num2}");
+            int correctTotal = num1 / num2;
+            string userAnswer = Console.ReadLine();
+            if (int.Parse(userAnswer) == correctTotal) return true;
+            return false;
         }
 
 
