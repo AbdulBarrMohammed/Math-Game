@@ -19,9 +19,10 @@ namespace MathGame
             foreach(var game in MockDatabase.games)
             {
                 Console.WriteLine($"{game.Date} - {game.OperationName} - {game.Score}");
-                System.Console.WriteLine("Press Any Key to Continue.");
-                Console.ReadKey();
+
             }
+            System.Console.WriteLine("Press Any Key to Continue.");
+            Console.ReadKey();
         }
     }
 }

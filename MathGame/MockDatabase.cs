@@ -7,9 +7,6 @@ namespace MathGame
 {
     public static class MockDatabase
     {
-        public static List<GameItem> games = new()
-        {
-
-        };
+        public static List<GameItem> games = new();
     }
 }

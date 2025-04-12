@@ -29,8 +29,9 @@ namespace MathGame
                 // press any key to continue
 
                 if (operation == "Q") break;
+                else if (operation == "V") ViewGameHistory();
                 else PlayGame();
-                Console.ReadKey();
+                //Console.ReadKey();
             }
 
         }
@@ -44,7 +45,8 @@ namespace MathGame
         {
             Random rnd = new Random();
             int currentTotal = 0;
-            while (true)
+            bool gameOn = true;
+            while (gameOn)
             {
                 int randNum1 = rnd.Next(1, 100);
                 int randNum2 = rnd.Next(1, 100);
@@ -54,29 +56,33 @@ namespace MathGame
                     case "A":
                         if(Operate.Addition(randNum1, randNum2)) currentTotal += 1;
                         else {
-                            _historyController.AddHistory(new GameItem(operation, DateTime.Now, currentTotal));
-                            break;
+                            Console.WriteLine("GAME OVER");
+                            _historyController.AddHistory(new GameItem("Addition", DateTime.Now, currentTotal));
+                            gameOn = false;
                         }
                         break;
                     case "S":
                         if(Operate.Subtraction(randNum1, randNum2)) currentTotal += 1;
                         else {
-                            _historyController.AddHistory(new GameItem(operation, DateTime.Now, currentTotal));
-                            break;
+                            Console.WriteLine("GAME OVER");
+                            _historyController.AddHistory(new GameItem("Subtraction", DateTime.Now, currentTotal));
+                            gameOn = false;
                         }
                         break;
                     case "M":
                         if(Operate.Multiplication(randNum1, randNum2)) currentTotal += 1;
                         else {
-                            _historyController.AddHistory(new GameItem(operation, DateTime.Now, currentTotal));
-                            break;
+                            Console.WriteLine("GAME OVER");
+                            _historyController.AddHistory(new GameItem("Multiplication", DateTime.Now, currentTotal));
+                            gameOn = false;
                         }
                         break;
                     case "D":
                         if(Operate.Division(randNum1, randNum2)) currentTotal += 1;
                         else {
-                            _historyController.AddHistory(new GameItem(operation, DateTime.Now, currentTotal));
-                            break;
+                            Console.WriteLine("GAME OVER");
+                            _historyController.AddHistory(new GameItem("Division", DateTime.Now, currentTotal));
+                            gameOn = false;
                         }
                         break;
                     default:
@@ -88,14 +94,18 @@ namespace MathGame
                 // get user input
                 // continue game until they get it wrong then create new game item object with
                 // the current score, time, and operation and then add it to history controller
-                Console.WriteLine($"Your current score is: {currentTotal}");
-                currentTotal = 0;
+
 
             }
+
+            Console.WriteLine($"Your current score is: {currentTotal}");
+            System.Console.WriteLine("Press any key to go back");
+            currentTotal = 0;
         }
 
         public void ViewGameHistory()
         {
+            Console.WriteLine("Your game History:");
             _historyController.ViewHistory();
         }
     }
