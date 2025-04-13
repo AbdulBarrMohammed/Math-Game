@@ -25,11 +25,9 @@ namespace MathGame
                 System.Console.WriteLine("Q - Quit the program");
                 operation = Console.ReadLine();
 
-                System.Console.WriteLine($"{operation} was your option");
-                // press any key to continue
-
                 if (operation == "Q") break;
                 else if (operation == "V") ViewGameHistory();
+                else if (operation != "A" && operation != "S" && operation != "M" && operation != "D") Console.WriteLine("Option not available");
                 else PlayGame();
                 //Console.ReadKey();
             }
@@ -87,20 +85,16 @@ namespace MathGame
                         break;
                     default:
                         Console.WriteLine("Entered wrong operation");
+
                         break;
                 }
 
-                // display current numbers and operation
-                // get user input
-                // continue game until they get it wrong then create new game item object with
-                // the current score, time, and operation and then add it to history controller
-
-
             }
-
-            Console.WriteLine($"Your current score is: {currentTotal}");
+            System.Console.WriteLine("");
+            Console.WriteLine($"Your score is: {currentTotal}");
             System.Console.WriteLine("Press any key to go back");
-            currentTotal = 0;
+            System.Console.WriteLine("");
+
         }
 
         public void ViewGameHistory()
