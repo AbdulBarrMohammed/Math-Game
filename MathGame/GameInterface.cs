@@ -30,7 +30,6 @@ namespace MathGame
                 else if (operation == "V") ViewGameHistory();
                 else if (operation != "A" && operation != "S" && operation != "M" && operation != "D") Console.WriteLine("Option not available");
                 else PlayGame();
-                //Console.ReadKey();
             }
 
         }
@@ -103,7 +102,9 @@ namespace MathGame
         public void ViewGameHistory()
         {
             Console.WriteLine("Your game History:");
+            Console.WriteLine("---------------------------------------------");
             _historyController.ViewHistory();
+
         }
     }
 }
