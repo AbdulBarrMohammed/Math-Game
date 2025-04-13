@@ -25,6 +25,7 @@ namespace MathGame
                 System.Console.WriteLine("Q - Quit the program");
                 operation = Console.ReadLine();
 
+                //Validation of user inputs
                 if (operation == "Q") break;
                 else if (operation == "V") ViewGameHistory();
                 else if (operation != "A" && operation != "S" && operation != "M" && operation != "D") Console.WriteLine("Option not available");
@@ -76,7 +77,10 @@ namespace MathGame
                         }
                         break;
                     case "D":
-                        if(Operate.Division(randNum1, randNum2)) currentTotal += 1;
+                        bool divAns = true;
+                        if (randNum1 > randNum2) divAns = Operate.Division(randNum1, randNum2);
+                        if (randNum2 > randNum1) divAns = Operate.Division(randNum2, randNum1);
+                        if(divAns) currentTotal += 1;
                         else {
                             Console.WriteLine("GAME OVER");
                             _historyController.AddHistory(new GameItem("Division", DateTime.Now, currentTotal));
@@ -85,7 +89,6 @@ namespace MathGame
                         break;
                     default:
                         Console.WriteLine("Entered wrong operation");
-
                         break;
                 }
 

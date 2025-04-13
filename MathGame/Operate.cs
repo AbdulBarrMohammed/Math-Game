@@ -12,9 +12,18 @@ namespace MathGame.obj
             System.Console.WriteLine($"{num1} + {num2}");
             int correctTotal = num1 + num2;
             string userAnswer = Console.ReadLine();
-            if (int.Parse(userAnswer) == correctTotal) return true;
-            return false;
 
+            int i;
+            bool success = int.TryParse(userAnswer, out i);
+
+            while (!success) {
+                System.Console.WriteLine($"{num1} + {num2}");
+                userAnswer = Console.ReadLine();
+                success = int.TryParse(userAnswer, out i);
+            }
+
+            if (i == correctTotal) return true;
+            return false;
 
         }
 
@@ -23,7 +32,17 @@ namespace MathGame.obj
             System.Console.WriteLine($"{num1} - {num2}");
             int correctTotal = num1 - num2;
             string userAnswer = Console.ReadLine();
-            if (int.Parse(userAnswer) == correctTotal) return true;
+
+            int i;
+            bool success = int.TryParse(userAnswer, out i);
+
+            while (!success) {
+                System.Console.WriteLine($"{num1} - {num2}");
+                userAnswer = Console.ReadLine();
+                success = int.TryParse(userAnswer, out i);
+            }
+
+            if (i == correctTotal) return true;
             return false;
         }
 
@@ -32,7 +51,17 @@ namespace MathGame.obj
             System.Console.WriteLine($"{num1} * {num2}");
             int correctTotal = num1 * num2;
             string userAnswer = Console.ReadLine();
-            if (int.Parse(userAnswer) == correctTotal) return true;
+
+            int i;
+            bool success = int.TryParse(userAnswer, out i);
+
+            while (!success) {
+                System.Console.WriteLine($"{num1} * {num2}");
+                userAnswer = Console.ReadLine();
+                success = int.TryParse(userAnswer, out i);
+            }
+
+            if (i == correctTotal) return true;
             return false;
         }
 
@@ -41,7 +70,17 @@ namespace MathGame.obj
             System.Console.WriteLine($"{num1} / {num2}");
             int correctTotal = num1 / num2;
             string userAnswer = Console.ReadLine();
-            if (int.Parse(userAnswer) == correctTotal) return true;
+
+            int i;
+            bool success = int.TryParse(userAnswer, out i);
+
+            while (!success) {
+                System.Console.WriteLine($"{num1} / {num2}");
+                userAnswer = Console.ReadLine();
+                success = int.TryParse(userAnswer, out i);
+            }
+
+            if (i == correctTotal) return true;
             return false;
         }
 
